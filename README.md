@@ -1,8 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js 15 Comlink Examples
+
+This project demonstrates how to use workers in Next.js via [Comlink](https://github.com/GoogleChromeLabs/comlink). Comlink makes it easy to work with web workers by providing a seamless API that abstracts away the complexities of worker messaging.
+
+## Examples
+
+This repository contains three different examples of using Comlink with Next.js:
+
+1. Basic Comlink Example
+
+A simple example showing how to use Comlink to communicate with a web worker. This demonstrates the fundamental setup and usage patterns.
+
+2. Singleton Worker Example
+
+Demonstrates how to implement a singleton pattern with web workers using Comlink. This ensures that only one worker instance is shared across multiple references, making all operations affect the same state.
+
+3. Non-Singleton Worker Example
+
+Shows how to create separate worker instances for independent operation. Unlike the singleton example, changes in one worker don't affect others.
 
 ## Getting Started
 
-First, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
@@ -13,24 +31,3 @@ pnpm dev
 # or
 bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
